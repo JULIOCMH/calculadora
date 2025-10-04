@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(1, 1, 185);
+    margin: 0;
+    padding: 0;
+    font-family: "Bitcount Grid Single Ink", system-ui;
+    font-optical-sizing: auto;
+    font-size: 25px;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0,
+        "SZP1" 0,
+        "SZP2" 40,
+        "XPN1" 0,
+        "XPN2" 0,
+        "YPN1" 0,
+        "YPN2" 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px;
+    animation: text 3s 1 ease-out;
+}
+
+@keyframes text {
+    from {
+        transform: translatey(-300px);
+    }
+
+    to {
+        transform: translatet(0px);
+    }
+}
+
+.calculadora {
+    background-color: rgb(1, 1, 224);
+    width: 70%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 50px black;
+    animation: calculadora 1.5s 1 ease-in;
+}
+
+@keyframes calculadora {
+    from {
+        transform: scale(0) rotate(-190deg);
+    }
+
+    to {
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img img {
+    width: 300px;
+    border-radius: 20px;
+    border: solid 2px black;
+    box-shadow: 0 0 30px black;
+}
+
+.informacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.precio,
+.total,
+.botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    background-color: grey;
+    width: 120px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.cantidad {
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.botones button {
+    width: 30px;
+    height: 30px;
+}
