@@ -3,8 +3,8 @@ let unidades = 1;
 let total = precio * unidades;
 let stock = 6;
 
-const preciobase = document.getElementById('preciobase');
-let preciototal = document.getElementById('preciototal');
+const preciobase = document.querySelector('#preciobase');
+let preciototal = document.querySelector('#preciototal');
 let cantidad = document.getElementById('cantidades');
 const btnsumar = document.getElementById('sumar');
 const btnrestar = document.getElementById('restar');
