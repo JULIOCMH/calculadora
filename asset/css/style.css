@@ -84,7 +84,7 @@ h1 {
 
 .precio,
 .total,
-.botones {
+.unidades {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,4 +109,14 @@ h1 {
 .botones button {
     width: 30px;
     height: 30px;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+.botones{
+    display: flex;
+    align-items: center;
+}
+.botones :hover{
+background-color: forestgreen;
+transition: 0.5s;
 }
